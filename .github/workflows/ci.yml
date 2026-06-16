@@ -1,0 +1,15 @@
+name: My First CI Pipeline
+      
+on:
+  push:
+    branches:
+      - main
+      - feature/**
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello
+        run: echo "Hello from GitHub Actions!"
